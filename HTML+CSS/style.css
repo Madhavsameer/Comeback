@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+    animation-name: bganime;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+@keyframes bganime {
+
+from{
+    background-color: rgb(148, 145, 106);
+}
+to{
+    background-color: rgb(147, 89, 117);
+}
+    
+}
