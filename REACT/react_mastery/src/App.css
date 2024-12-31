@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.links{
+background-color: #61dafb;
+color: bisque;
+text-align: center;
+font-size: large;
+padding: 20px;
+}
+.link{
+  color: rgb(87, 64, 162);
+  margin: 10px;
+  text-decoration: none;
+  
+  
+}
+.link:hover{
+  color: rgb(206, 133, 23);
+}

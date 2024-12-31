@@ -13,15 +13,26 @@ function Counter() {
     function handleReset(){
         setnum(0);
     }
+
+    function handleManual(){
+        let num=prompt("Enter the number")
+        setnum(num);
+    }
+    function handleRandom(){
+        let num=Math.floor(Math.random()*8);
+                setnum(num);
+    }
   return (
 
     <div>
 
 
         <h1>{num}</h1>
-        <button onClick={handleIncrement}>Increment</button>
+        <button onClick={handleIncrement} >Increment</button>
         <button onClick={handleDecrement}>Decrement</button>
         <button onClick={handleReset}>Reset</button>
+        <button onClick={handleManual}>Manual</button>
+        <button onClick={handleRandom}>Random</button>
 
 
     </div>
