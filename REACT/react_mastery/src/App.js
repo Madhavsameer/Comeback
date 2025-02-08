@@ -1,36 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from './components/Home'
-import About from './components/About'
-import Contact from './components/Contact'
-import Navbar from './components/Navbar';
-import Counter from './components/Counter';
-import DataFetch from './components/DataFetch';
-import ApiFetch from './components/ApiFetch';
-import FormHandling from './components/FormHandling';
-import Ip from './components/Ip';
+import  Hero from './pages/Hero.jsx'
+import  Counter from './pages/Counter.jsx'
+import User from './pages/User.jsx';
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './pages/Navbar.jsx';
   
 
 function App() {
   return (
     <div className="App">
-      
-      <Router>
-      <Navbar/>
-        <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/Home' element={<Home/>}></Route>
-          <Route path='/About' element={<About/>}></Route>
-          <Route path='/Contact' element={<Contact/>}></Route>
-          <Route path='/Counter' element={<Counter/>}></Route>
-          <Route path='/DataFetch' element={<DataFetch/>}></Route>
-          <Route path='/ApiFetch' element={<ApiFetch/>}></Route>
-          <Route path='/FormHandling' element={<FormHandling/>}></Route>
 
+      <Router>
+        <Navbar/>
+        
+        <Routes>
+        
+          <Route path='/user' Component={User}></Route>
+          <Route path='/counter' Component={Counter}></Route>
+          <Route path='/hero' Component={Hero}></Route>
         </Routes>
-        <Ip/>
       </Router>
+    
+     {/* <Hero name="Madhav" age={23}/>
+     <Hero name="Priyanshu" age={21}/> */}
+     {/* <Counter/> */}
+     {/* <User/> */}
     </div>
   );
 }
