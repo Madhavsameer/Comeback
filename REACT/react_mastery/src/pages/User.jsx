@@ -2,10 +2,25 @@ import React, { useState } from 'react'
 
 function User() {
 
-    const [name,setname]=useState("");
+    const [name,setname]=useState(false);
+
+    
+
     function handlename(){
-        let a=prompt("Enter your name: ")
+      if(name==false)
+        {
+          setname("User");
+        }
+        else{
+          setname(true);
+          let a=prompt("Enter your name: ")
         setname(a);
+
+
+        }
+
+      
+         
     }
   return (
     <div>

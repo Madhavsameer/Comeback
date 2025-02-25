@@ -10,6 +10,8 @@ function Navbar() {
         <Link to="/user">User</Link>
         <br />
         <Link to="/hero">Hero</Link>
+        <br />
+        <Link to="/todo">Todo</Link>
       
     </div>
   )
