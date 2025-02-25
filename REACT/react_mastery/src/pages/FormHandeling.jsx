@@ -1,17 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function FormHandling() {
   const [formData, setFormData] = useState({ name: "", email: "", pass: "" });
   const [datas,setDatas]=useState([]);
+
+  useEffect(() => {
+    const storedData = JSON.parse(sessionStorage.getItem("formSubmissions")) || [];
+    setDatas(storedData);
+  }, []);
+
   function handleChange(e) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   }
+
+
  
   function handleSubmit(e) {
     e.preventDefault();
     alert("Form Submitted!");
     setDatas([...datas,formData]);
     console.log(datas);
+    const updatedData = [...datas, formData];
+    setDatas(updatedData);
+    sessionStorage.setItem("formSubmissions", JSON.stringify(updatedData));
     setFormData({ name: "", email: "", pass: "" });
     
 
