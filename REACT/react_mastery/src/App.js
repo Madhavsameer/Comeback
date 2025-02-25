@@ -7,6 +7,12 @@ import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './pages/Navbar.jsx';
 import ToDo from './pages/ToDo.jsx';
 import API from './pages/API.jsx';
+import Greet from './pages/Greet.jsx';
+import ToggleTheme from './pages/ToggleTheme.jsx';
+import Dice from './pages/Dice.jsx';
+import FormHandeling from './pages/FormHandeling.jsx';
+
+
   
 
 function App() {
@@ -30,7 +36,13 @@ function App() {
      {/* <Counter/> */}
      {/* <User/> */}
 
-     <API/>
+     {/* <API/> */}
+
+     {/* <Greet /> */}
+     {/* <ToggleTheme/> */}
+     {/* <Dice/> */}
+     <FormHandeling/>
+ 
     </div>
   );
 }
