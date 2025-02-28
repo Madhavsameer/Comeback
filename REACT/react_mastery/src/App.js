@@ -11,6 +11,7 @@ import Greet from './pages/Greet.jsx';
 import ToggleTheme from './pages/ToggleTheme.jsx';
 import Dice from './pages/Dice.jsx';
 import FormHandeling from './pages/FormHandeling.jsx';
+import Use from './pages/Use.jsx';
 
 
   
@@ -41,7 +42,8 @@ function App() {
      {/* <Greet /> */}
      {/* <ToggleTheme/> */}
      {/* <Dice/> */}
-     <FormHandeling/>
+     {/* <FormHandeling/> */}
+     <Use/>
  
     </div>
   );

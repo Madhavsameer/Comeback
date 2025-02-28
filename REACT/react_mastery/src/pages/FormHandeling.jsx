@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 function FormHandling() {
+  
   const [formData, setFormData] = useState({ name: "", email: "", pass: "" });
   const [datas,setDatas]=useState([]);
 
